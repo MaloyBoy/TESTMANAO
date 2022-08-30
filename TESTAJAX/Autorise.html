@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="/Login/StyleLogin.css">
+</head>
+<noscript>
+    <h2>JS в вашем браузере отключён или его нет</h2>
+</noscript>
+<body>
+<form id=form>
+    <div class="form-control">
+        <p>Введите логин</p>
+        <input id="login" class="login" type="text" name="login">
+        <small>Error message</small>
+        <p>Введите пароль</p>
+        <p>
+            <input id="password" class="password" type="password" name="password">
+            <small>Error message</small>
+        </p>
+        <p>
+            <button id="enter" disabled="disabled" type="submit" class="enter" name="enter">Войти</button>
+        </p>
+    </div>
+</form>
+</body>
+<p>У вас нет аккаунта ? <a href="/signup.html">Зарегистрируйтесь</a></p>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/Login/Login.js"></script>

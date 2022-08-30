@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Регистрация</title>
+</head>
+<noscript>
+    <h2>JS в вашем браузере отключён или его нет</h2>
+</noscript>
+<link rel="stylesheet" href="/Register/StyleSignup.css">
+<form id="form">
+    <div class="form-control">
+        <p>Введите логин</p>
+        <input type="text" class="login" id="login" name="login" placeholder="Не менее 6 символов"> <img src="/help.png"
+                                                                                                         width="20"
+                                                                                                         height="20"
+                                                                                                         alt="помощь"
+                                                                                                         title="Логин должен состоять только из латинских символов с цифрами или без них">
+        <small>Error message</small>
+    </div>
+    <div class="form-control">
+        <p>Введите пароль</p>
+        <input type="password" id="password1" class="password1" name="password1" placeholder="PAssword12"> <img
+            src="/help.png" width="20" height="20" alt="помощь"
+            title="минимум 8 символов, должнен состоять из двух симолов верхнего регистра,цифр и латинских букв">
+        <small>Error message</small>
+    </div>
+    <div class="form-control">
+        <p>Подтвердите пароль:</p>
+        <input type="password" id="password2" class="password2" name="password2" placeholder="PAssword12">
+        <small>Error message</small>
+    </div>
+    <div class="form-control">
+        <p>введите E-mail</p>
+        <input type="text" placeholder="test@gmail.com" class="email" id="email" name="email">
+        <small>Error message</small>
+    </div>
+    <div class="form-control">
+        <p>Введите имя</p>
+        <input type="text" class="name" id="name" name="name" placeholder="Евкакий"> <img src="/help.png" width="20"
+                                                                                          height="20" alt="помощь"
+                                                                                          title="Имя должно быть написано на русском языке (только имя без фамилии и отчества)">
+        <small>Error message</small>
+    </div>
+    <p>
+        <button type="submit" disabled="" id="signupbtn" class="signupbtn" name="signup">Зарегистрироваться</button>
+        </div>
+    </p>
+    <p>Уже есть учётная запись ? <a href="/Autorise.html">Войти</a></p>
+    </p>
+</form>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/Register/Signup.js"></script>
