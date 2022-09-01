@@ -6,6 +6,16 @@ const email = document.getElementById('email');
 const name = document.getElementById('name');
 document.getElementById('signupbtn').disabled = false;
 
+$("input#password1").on({
+    keydown: function(e) {
+        if (e.which === 32)
+            return false;
+    },
+    change: function() {
+        this.value = this.value.replace(/\s/g, "");
+    }
+});
+
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
